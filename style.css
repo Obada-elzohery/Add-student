@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    direction: rtl;
+    text-align: right;
+    background: linear-gradient(45deg, #F1E5D1, #DBB5B5, #C39898 , #987070); /* خلفية متعددة الألوان */
+    background-size: 600% 600%; /* حجم الخلفية الكبير */
+    animation: gradientAnimation 10s ease infinite; /* تطبيق الأنيميشن */
+}
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%; /* بداية الخلفية */
+    }
+    50% {
+        background-position: 100% 50%; /* منتصف الخلفية */
+    }
+    25%{
+        background-position: 100% 25%; /* ربع الخلفية */
+    }
+    100% {
+        background-position: 0% 50%; /* نهاية الخلفية */
+    }
+}
+.container {
+    max-width: 600px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+h2 {
+    color: #333;
+    font-size: 30px;
+}
+label{
+    color: #333;
+    font-size: 20px;
+}
+option{
+    color: #333;
+    font-size: 15px;
+}
+#studentId{
+    border-radius: 20px;
+}
+#studentName{
+    border-radius: 20px;
+}
+#studentStatus{
+    border-radius: 20px;
+}
+input[type="text"], select {
+    width: calc(100% - 10px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+button {
+    padding: 10px 20px;
+    background-color: #C39898;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #987070;
+}
+.students-list {
+    margin-top: 20px;
+}
+.student {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    background-color: #f9f9f9;
+}
+.student-info {
+    display: inline-block;
+    margin-right: 10px;
+}
+.remove-btn {
+    background-color: #f44336;
+}
+.remove-btn:hover {
+    background-color: #d32f2f;
+}

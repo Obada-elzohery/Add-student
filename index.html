@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS Link -->
+     <link rel="stylesheet" href="style.css">
+    <!-- CSS Link -->
+    <title>إدارة قائمة الطلاب</title>
+</head>
+<body>
+
+<div class="container">
+    <h2>إدارة قائمة الطلاب</h2>
+
+    <div>
+        <label for="studentId">معرف الطالب:</label>
+        <input type="text" id="studentId" placeholder="أدخل معرف الطالب...">
+    </div>
+    <div>
+        <label for="studentName">اسم الطالب:</label>
+        <input type="text" id="studentName" placeholder="أدخل اسم الطالب...">
+    </div>
+    <div>
+        <label for="studentStatus">حالة التسجيل:</label>
+        <select id="studentStatus">
+            <option value="مسجل">مسجل</option>
+            <option value="غير مسجل">غير مسجل</option>
+        </select>
+    </div>
+    <div>
+        <button onclick="addStudent()">إضافة طالب</button>
+        <button onclick="printStudents()">طباعة الطلاب</button>
+    </div>
+
+    <div class="students-list" id="studentsList">
+        <!-- سيتم إضافة قائمة الطلاب هنا -->
+    </div>
+</div>
+
+
+
+<script src="app.js"></script>
+</body>
+</html>
